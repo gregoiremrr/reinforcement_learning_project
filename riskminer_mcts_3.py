@@ -449,7 +449,6 @@ def evaluate_state(state, network, vocab, device='cpu'):
         legal_moves = state.get_possible_moves()
         policy = {}
         if legal_moves:
-            # Suppose you have a mapping from token indices to move tokens.
             # For each legal move, get its corresponding probability from the network's output.
             for move in legal_moves:
                 move_str = str(move)  # ensure it's a string key
